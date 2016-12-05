@@ -102,6 +102,7 @@ background-size: 100% 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
+	display:block;
 	
 }
 
@@ -153,6 +154,11 @@ background-size: 100% 100%;
 	overflow: hidden;
 }
 
+/*about-us*/
+.readable{
+	background: black;
+    background: rgba(0, 0, 0, 0.25);
+}
 
 
 
@@ -244,9 +250,19 @@ background-size: 100% 100%;
 	
 	}
 	.sub-block{
-		padding-top: 450px
+		padding-top: 150px
 	}
 
+	/*event page*/
+	.panel .panel-body p{
+		font-size: 13px;
+	}
+	.header-font a{
+		font-size:18px;
+	}
+	h1#panel-head{
+		font-size: 40px;
+	}
 
 }
 
@@ -265,6 +281,9 @@ background-size: 100% 100%;
 	padding:0;
 	font-size: 14px;
 	}
+	.sub-block{
+		padding-top: 10px;
+	}
 	.sub-block p{
 		font-size: 13px;
 	}
@@ -276,10 +295,17 @@ background-size: 100% 100%;
 	font-size:10px;
 	}
 
-.background-color{
-background:  #0F5F7A;
+	.background-color{
+	background:  #0F5F7A;
 
 
-}
+	}
+	.space{
+		display:none;
+	}
+
+	.panel .panel-body p{
+		font-size: 13px;
+	}
 
 }
