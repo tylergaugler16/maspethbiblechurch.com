@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato); 
+@import url(http://fonts.googleapis.com/css?family=Lato);
 /*lato, for headers*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 /*merriweather for content*/
@@ -6,7 +6,7 @@
 /*icons*/
 
 .background-color{
-background: url('images/background_edited.jpg') no-repeat center center fixed; 
+background: url('images/background_edited.jpg') no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -19,36 +19,36 @@ background-size: 100% 100%;
 
 
 .nav{
-	
+
 	background-color: white;
-	width:90%;
-	margin-left:5%;
+	width:100%;
+}
+#navbar_id{
+	height:70px!important;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.1))
 }
 
 
 .navbar-brand{
-	font-size:3em;
+	font-size:2em;
 }
 
 .navbar-brand img{
-	height: 110px;
-	
+	height: 70px;
+
 	/*height: 100%;*/
 	width: auto;
 }
 
-.navbar-nav li a{
-	font-size:22px;
-	font-family: "Montserrat";
-	margin-bottom: 30px;
 
-	/*margin-right: 100px;*/
-	/*line-height: 80px;*/
-	/*height:80px;*/
-	
-}
+
+
+
 .navbar-nav li{
-	margin-left: 100px;
+	margin-left: 25px;
+}
+.navbar-nav li:first-child{
+	margin-left: 10px;
 }
 
 
@@ -57,8 +57,36 @@ background-size: 100% 100%;
 .navbar-brand, #menu-button,.navbar-nav li a{
 	/*line-height: 100px;
 	height:100px;*/
-	padding-top: 0;
-	margin-left: 40px;
+}
+.navbar-brand{
+	padding:0;
+}
+.navbar-nav li a{
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 70px;
+	padding:0;
+	/*padding:5px 10px;*/
+}
+.navbar-nav{
+	display:inline-block;
+	width:60%;
+}
+.white-font-important{
+	padding: 0 50px !important;
+	color:white!important;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 8px;
+}
+.black-font-important{
+		color:#333!important;
+}
+
+.nav{
+	background-color: transparent;
+}
+.navbar-collapse{
 
 }
 
@@ -74,7 +102,7 @@ background-size: 100% 100%;
 .main-block{
 	/*background-color: #eeeeee;*/
 /*here*/
-	
+
 	width: 100%;
 	height: 600px;
 	left:0;
@@ -103,7 +131,7 @@ background-size: 100% 100%;
 	padding-bottom: 10px;
 	text-align: center;
 	display:block;
-	
+
 }
 
 .sub-block h3 a{
@@ -118,7 +146,7 @@ background-size: 100% 100%;
 	padding-right: 5px;
 	font-family:'Merriweather', serif;
 	font-size: 15px;
-	height:120px;
+	/*height:120px;*/
 	color: white;
 	overflow: auto;
 
@@ -127,6 +155,9 @@ background-size: 100% 100%;
 
 .btn{
 	margin-top: 10px;
+}
+.btn-danger{
+	margin-bottom: 5px;
 }
 
 .service{
@@ -152,6 +183,7 @@ background-size: 100% 100%;
 	height:500px;
 	width:1000px;
 	overflow: hidden;
+	margin:0 auto;
 }
 
 /*about-us*/
@@ -185,36 +217,63 @@ background-size: 100% 100%;
 	}
 	.main-block{
 		height:300px;
-	
+
 	}
 
 	.sub-block{
 		padding-top: 300px
 	}
 	.navbar-brand img{
-		max-height:  40px;
-		height:40px;
+		height:50px;
 		width:auto;
-		margin-top: 4px;
+		margin-left: 20px;
     }
-
-
-}
-
-
-@media(max-width: 768px){
-	.navbar-brand, #menu-button,.navbar-nav li a{
-	line-height: 50px;
-	height:50px;
+	#map{
+		height: 400px;
+		width:800px;
 	}
 
-    .navbar-collapse.collapse.in { 
+}
+@media(max-width: 990px){
+	.navbar-nav li a{
+	line-height: 40px;
+	/*height:50px;*/
+	}
+	.navbar-nav li{
+		margin-left: 50px;
+	}
+	.navbar-nav li:first-child{
+		margin-left: 50px;
+	}
+	#navbar_id{
+		height:50px !important;
+	}
+	.navbar-collapse.collapse.in {
+		background-color: white;
+	}
+	.collapsing {
+			background-color: white;
+	}
+	#map{
+		height:350px;
+		width:700px;
+	}
+}
+
+@media(max-width: 768px){
+	.navbar-nav li a{
+	line-height: 30px;
+	/*height:50px;*/
+	}
+    .navbar-collapse.collapse.in {
+			background-color: white;
         display: block!important;
     }
     .collapsing {
+				background-color: white;
         overflow: hidden!important;
     }
-	
+
 	/*.carousel-inner .item{
 	height:400px;
 	}
@@ -229,7 +288,8 @@ background-size: 100% 100%;
 	}
 
 	#map{
-		display:none;
+		height:350px;
+		width: 500px;
 
 	}
 	.map-small{
@@ -247,7 +307,7 @@ background-size: 100% 100%;
 	}
 	.main-block{
 		height:150px;
-	
+
 	}
 	.sub-block{
 		padding-top: 150px
@@ -282,6 +342,7 @@ background-size: 100% 100%;
 	font-size: 14px;
 	}
 	.sub-block{
+		margin-top: 50px;
 		padding-top: 10px;
 	}
 	.sub-block p{
@@ -292,10 +353,11 @@ background-size: 100% 100%;
 		display: none;
 	}
 	.navbar-nav li a{
-	font-size:10px;
+	font-size:12px;
 	}
 
 	.background-color{
+
 	background:  #0F5F7A;
 
 
@@ -306,6 +368,9 @@ background-size: 100% 100%;
 
 	.panel .panel-body p{
 		font-size: 13px;
+	}
+	#map{
+		display:none;
 	}
 
 }

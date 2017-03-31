@@ -1,9 +1,18 @@
+var returnedToTop = true;
+var mediaQueriesOn = false;
+$(window).on('scroll', function(){
+  mediaQueriesOn = ($(window).width() <= 990)? true : false;
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-78732723-1', 'auto');
-  ga('send', 'pageview');
-
+  if($(window).scrollTop() == 0 && !mediaQueriesOn){
+    $('#navbar_id').css('background','transparent');
+    $('.navbar-nav li a').removeClass('black-font-important').addClass('white-font-important');
+    $('.navbar-brand img').css('display','none');
+    returnedToTop = true;
+  }
+  if( ($(window).scrollTop() > 0 && returnedToTop) || mediaQueriesOn ){
+    $('#navbar_id').css('background','white');
+    $('.navbar-nav li a').removeClass('white-font-important').addClass('black-font-important').css('font-size','14');
+    $('.navbar-brand img').css('display','initial');
+    returnedToTop = false;
+  }
+});
