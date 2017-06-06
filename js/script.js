@@ -7,3 +7,17 @@
   ga('create', 'UA-78732723-1', 'auto');
   ga('send', 'pageview');
 
+  window.addEventListener('scroll', function() {
+  	if($(window).scrollTop() == 0) {
+  		$('.nav').css('background-color', 'transparent');
+
+  	}
+  	else{
+  		$('.nav').css('background-color', '#cccccc');
+  	}
+  });
+  $('#menu-button').click(function(){
+  		$('.nav').css('background-color', '#cccccc');
+
+
+  });
