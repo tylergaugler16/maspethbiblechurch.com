@@ -7,6 +7,8 @@
   ga('create', 'UA-78732723-1', 'auto');
   ga('send', 'pageview');
 
+var mainBlockVisible = false;
+
   window.addEventListener('scroll', function() {
   	if($(window).scrollTop() == 0) {
   		$('.nav').css('background-color', 'transparent');
@@ -15,6 +17,11 @@
   	else{
   		$('.nav').css('background-color', '#cccccc');
   	}
+    if( !mainBlockVisible && $(window).scrollTop() >  $(window).height()/2){
+      $('.carousel').fadeIn( 1000, function() {
+          mainBlockVisible= true;
+    });
+    }
   });
   $('#menu-button').click(function(){
   		$('.nav').css('background-color', '#cccccc');
