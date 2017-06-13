@@ -10,12 +10,13 @@
 var mainBlockVisible = false;
 
   window.addEventListener('scroll', function() {
+    var color = ($(window).width() <= 768)? '#333' : 'transparent';
   	if($(window).scrollTop() == 0) {
-  		$('.nav').css('background-color', 'transparent');
+  		$('#header').css('background-color', color);
 
   	}
   	else{
-  		$('.nav').css('background-color', '#cccccc');
+  		$('#header').css('background-color', '#286090'); //
   	}
     if( !mainBlockVisible && $(window).scrollTop() >  $(window).height()/2){
       $('.carousel').fadeIn( 1000, function() {
