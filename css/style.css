@@ -173,7 +173,7 @@ padding:0;
 	padding-right: 5px;
 	font-family:'Merriweather', serif;
 	font-size: 15px;
-	height:120px;
+	height:auto;
 	color: white;
 	overflow: auto;
 
@@ -240,6 +240,9 @@ padding:0;
 	/*.remove-when{
 		height:0px;
 	}*/
+	.service{
+		height:230px;
+	}
 
 	.carousel{
 		height:300px;
@@ -351,9 +354,12 @@ padding:0;
 }
 
 @media(max-width: 420px){
+	.background-color{
+
+	}
 
 	#header{
-		background-color: black;
+		background-color: #333;
 	}
 	.carousel .item{
 		height:0px;
@@ -375,23 +381,60 @@ padding:0;
 		font-size: 13px;
 	}
 
-	.remove-when{
-		display: none;
+	.full-viewport-space{
+		height:5px;
 	}
 	/*.navbar-nav li a{
 	font-size:10px;
 	}*/
 
 	.background-color{
-	background:  #0F5F7A;
+	/*background:  #0F5F7A;*/
+	background: url('images/mobile.jpg')no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: 100% 100%;
+	/*padding:0;*/
+	}
+	.event-flexbox-container{
+		width: 80%;
+		margin:0 auto;
+		text-align: center;
+	}
+	#latest-event-header{
+		margin-top: 60px;
+	}
+	#latest-event-header,.latest-events h2{
+		font-size: 25px;
+	}
+	.latest-events h3{
+		font-size: 18px;
+	}
+	.latest-events label{
+		font-weight: normal;
 	}
 	.space{
-		display:none;
+		/*display:none;*/
+		height: 80px;
 	}
+	.remove-mobile{
+		display: none;
+	}
+	.service{
+		height:212px;
+	}
+
+
 
 	.panel .panel-body p{
 		font-size: 13px;
 	}
+	.footer{
+		font-size:12px;
+	}
+
 
 }
 @media (max-width: 350px) {
