@@ -121,7 +121,10 @@ a:hover{ text-decoration: none;}
 .main-logo-container{
 	position: absolute;
 	padding: 30px 50px;
-	background-color: rgba(0,0,0,0.4);
+	/* background-color: rgba(0,0,0,0.4); */
+	height: 100px;
+	width: auto;
+	background-size: cover;
 	color: #fafafa;
 	top:25%;
 	left: 30%;
@@ -129,8 +132,9 @@ a:hover{ text-decoration: none;}
 	font-size: 40px;
 	font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 .main-navbar{
-	height: 65px;
+	height: 80px;
 	width: 100%;
 	background-color: #FCFFFD;
 	box-shadow: 0 3px 2px -2px rgba(200,200,200,.15);
@@ -138,7 +142,12 @@ a:hover{ text-decoration: none;}
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	background: url("../images/two-orange-cross2@large.png");
+	background-repeat: no-repeat;
+	background-size: 120px auto;
+	background-position: 100px 50%;
 }
+
 .main-navbar div a{
 	color: #6f8ab7;
 	text-transform: capitalize;
@@ -189,6 +198,44 @@ a:hover{ text-decoration: none;}
 }
 .who-we-are-container{
 	/* margin: 0px 100px; */
+}
+.block-light-blue{
+	background-color: #cae5ff;
+	position: absolute;
+}
+.block-royal-blue{
+	background-color: #4062BB;
+	position: absolute;
+}
+.block-1{
+	height: 40px;
+	width: 40px;
+	top: 20%;
+	left: 30%;
+}
+.block-2{
+	height: 80px;
+	width: 80px;
+	top: 70%;
+	left: 10%;
+}
+.block-3{
+	height: 50px;
+	width: 50px;
+	top: 50%;
+	left: 5%;
+}
+.block-4{
+	height: 40px;
+	width: 40px;
+	top: 40%;
+	left: 20%;
+}
+.block-5{
+	height: 20px;
+	width: 20px;
+	top: 50%;
+	left: 30%;
 }
 .mbc-description{
 	margin: 50px 30px;
@@ -245,12 +292,51 @@ a:hover{ text-decoration: none;}
 	width: 100%;
 	height: 500px;
 }
-.what-to-expect-list{
+/* .what-to-expect-list{
 	margin-top: 20px;
-}
+} */
 .what-to-expect-list li{
 	margin-top: 10px;
 	font-size: 18px;
+}
+.background-tile{
+	background-repeat: no-repeat!important;
+	background-position: center!important;
+	background-size: contain!important;
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	-o-background-size: cover!important;
+	height: 400px!important;
+	position:relative!important;
+}
+
+.background-tile:hover{
+	/* filter: grayscale(80%); */
+	filter: opacity(80%);
+}
+.background-tile:hover .link-text {
+	visibility:visible;
+}
+.background-tile .link-text {
+	font-size: 36px;
+	border-bottom: 3px solid #FCFFFD;
+	position:absolute;
+	top:80%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	visibility:hidden;
+}
+.background-pic-1{
+		background: url('../images/young-adults.jpg')
+}
+.background-pic-2{
+	background: url('../images/bible-study.jpg');
+}
+.background-pic-3{
+	background: url('../images/open-gym-group.jpg');
+}
+.background-pic-4{
+	background: url('../images/picnic.jpg');
 }
 
 /* contact us page  */
